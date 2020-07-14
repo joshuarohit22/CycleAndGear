@@ -14,6 +14,10 @@ class Wheel {
 		return this.rim + (this.tire * 2);
 	}
 
+	public double circumference() {
+		return this.diameter() * Math.PI;
+	}
+
 	public int getRim() {
 		return this.rim;
 	}
