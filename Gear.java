@@ -5,8 +5,7 @@ public class Gear {
 	private int chainring;
 	private int cog;
 
-	private int rim;
-	private double tire;
+	private Wheel wheel;
 
 	public Gear(int chainring, int cog, int rim, double tire) {
 		this.chainring = chainring;
@@ -37,6 +36,10 @@ public class Gear {
 
 	public double gearInches() {
 		return this.ratio() * ( rim + (tire * 2) );
+	}
+
+	public double diameter() {
+		return this.rim + (this.tire * 2);
 	}
 
 }
