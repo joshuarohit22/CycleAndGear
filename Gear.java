@@ -4,8 +4,9 @@ import java.io.*;
 public class Gear {
 	private int chainring;
 	private int cog;
+	private int rim;
+	private double tire;
 
-	private Wheel wheel;
 
 	public Gear(int chainring, int cog, int rim, double tire) {
 		this.chainring = chainring;
