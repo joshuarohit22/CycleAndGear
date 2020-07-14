@@ -34,11 +34,10 @@ public class Gear {
 	private Wheel wheel;
 
 
-	public Gear(int chainring, int cog, int rim, double tire) {
+	public Gear(int chainring, int cog, Wheel wheel) {
 		this.chainring = chainring;
 		this.cog = cog;
-
-		this.wheel = new Wheel(rim, tire);
+		this.wheel = wheel;
 	}
 
 	public int getChainring() {
