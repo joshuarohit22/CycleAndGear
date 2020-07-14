@@ -15,6 +15,22 @@ public class Gear {
 		this.tire = tire;
 	}
 
+	public int getChainring() {
+		return this.chainring;
+	}
+
+	public int getCog() {
+		return this.cog;
+	}
+
+	public int getRim() {
+		return this.rim;
+	}
+
+	public double getTire() {
+		return this.tire;
+	}
+
 	public double ratio() {
 		return (chainring * 1.0) / (cog * 1.0);
 	}
